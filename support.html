@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BishopTest - Soporte</title>
+    <style>
+        :root {
+            --primary-color: #0080FF;
+            --secondary-color: #6C757D;
+            --background-color: #F8F9FA;
+            --text-color: #212529;
+            --accent-color: #28A745;
+            --light-gray: #E9ECEF;
+            --border-radius: 8px;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .contact-method i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            width: 24px;
+            text-align: center;
+        }
+        
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        
+        .faq-answer {
+            color: var(--text-color);
+        }
+        
+        .disclaimer {
+            background-color: var(--light-gray);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para íconos SVG inline */
+        .icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            fill: var(--primary-color);
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">BishopTest</div>
+            <div class="tagline">Evaluación obstétrica precisa</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h1>Soporte Técnico</h1>
+            <p>Gracias por utilizar BishopTest. Estamos comprometidos a proporcionar la mejor experiencia posible para los profesionales médicos. Si necesitas asistencia, tienes preguntas o deseas proporcionar feedback, puedes contactarnos a través de los siguientes medios:</p>
+            
+            <div class="contact-info">
+                <div class="contact-method">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <div>
+                        <strong>Email:</strong>
+                        <a href="mailto:christian.arzaluz@gmail.com">christian.arzaluz@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                    </svg>
+                    <div>
+                        <strong>Formulario de Contacto:</strong>
+                        <a href="https://forms.gle/bishoptest-support" target="_blank">Completar Formulario</a>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                    </svg>
+                    <div>
+                        <strong>Reportar Problemas:</strong>
+                        <a href="https://github.com/bishoptest/issues" target="_blank">GitHub Issues</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Preguntas Frecuentes</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo se calcula el Test de Bishop en la aplicación?</div>
+                <div class="faq-answer">
+                    El Test de Bishop en nuestra aplicación evalúa cinco parámetros cervicales (dilatación, borramiento, consistencia, posición y estación) asignando puntuaciones de 0-3 a cada uno. También aplicamos modificadores como preeclampsia, partos previos, embarazo postérmino, nuliparidad y ruptura prematura de membranas si están habilitados en la configuración. El algoritmo cumple con los estándares clínicos establecidos por Edward Bishop en 1964 con las actualizaciones posteriores aceptadas en la práctica obstétrica actual.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Dónde se almacenan los datos de mis pacientes?</div>
+                <div class="faq-answer">
+                    BishopTest almacena todos los datos de pacientes de forma local en tu dispositivo. No transferimos ni almacenamos ninguna información en nuestros servidores. La información permanece completamente bajo tu control y no se comparte con terceros. Esto garantiza la privacidad y confidencialidad de la información sensible de los pacientes.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Puedo exportar los datos o historiales de evaluaciones?</div>
+                <div class="faq-answer">
+                    Actualmente, la versión 1.0 no ofrece la exportación de datos. Esta característica está planeada para futuras actualizaciones. Si necesitas esta funcionalidad urgentemente, por favor contáctanos para hacernos saber tus requisitos específicos.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Qué dispositivos y versiones de iOS son compatibles?</div>
+                <div class="faq-answer">
+                    BishopTest es compatible con iPhone y iPad ejecutando iOS 17.6 o superior. La aplicación está optimizada para funcionar en todos los tamaños de pantalla, incluyendo los modelos más recientes de iPhone y iPad.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo puedo cambiar el idioma de la aplicación?</div>
+                <div class="faq-answer">
+                    BishopTest detecta automáticamente el idioma configurado en tu dispositivo y mostrará la interfaz en inglés o español según corresponda. Para cambiar el idioma, simplemente cambia la configuración de idioma en los ajustes de tu dispositivo iOS.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Recursos Adicionales</h2>
+            <ul>
+                <li><a href="https://bishoptest.app/docs" target="_blank">Documentación Completa</a></li>
+                <li><a href="https://bishoptest.app/tutorials" target="_blank">Tutoriales en Video</a></li>
+                <li><a href="https://bishoptest.app/updates" target="_blank">Notas de Actualización</a></li>
+                <li><a href="https://bishoptest.app/privacy" target="_blank">Política de Privacidad</a></li>
+                <li><a href="https://bishoptest.app/terms" target="_blank">Términos de Uso</a></li>
+            </ul>
+        </div>
+        
+        <div class="disclaimer">
+            <strong>Descargo de Responsabilidad Médica:</strong> BishopTest es una herramienta de apoyo clínico diseñada para profesionales de la salud. Esta aplicación no sustituye el juicio clínico profesional. Las decisiones sobre manejo y tratamiento de pacientes deben basarse en la evaluación completa del paciente, incluyendo la historia clínica y exámenes adicionales cuando sea apropiado. Consulte las guías y protocolos clínicos de su institución.
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BishopTest App. Todos los derechos reservados.</p>
+            <p><a href="https://bishoptest.app/privacy">Política de Privacidad</a> | <a href="https://bishoptest.app/terms">Términos de Uso</a></p>
+        </div>
+    </footer>
+</body>
+</html>
