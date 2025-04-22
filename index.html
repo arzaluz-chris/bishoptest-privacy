@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BishopTest - Privacy Policy</title>
+    <style>
+        :root {
+            --primary-color: #0080FF;
+            --primary-light: rgba(0, 128, 255, 0.1);
+            --text-color: #333;
+            --secondary-color: #6C757D;
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --border-radius: 16px;
+            --spacing: 24px;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #4DAAFF;
+                --primary-light: rgba(77, 170, 255, 0.2);
+                --text-color: #E1E1E1;
+                --secondary-color: #ADBDC5;
+                --background-color: #121212;
+                --card-background: #1E1E1E;
+            }
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: var(--spacing);
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .language-btn {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .language-btn:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .language-btn.active {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        .card {
+            background-color: var(--card-background);
+            border-radius: var(--border-radius);
+            padding: var(--spacing);
+            margin-bottom: var(--spacing);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title svg {
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        ul {
+            padding-left: 24px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: auto;
+            padding: 20px;
+            background-color: var(--primary-light);
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+        
+        .content-section {
+            display: none;
+        }
+        
+        .content-section.active {
+            display: block;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.3rem;
+            }
+            
+            .language-selector {
+                position: static;
+                justify-content: center;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <button id="en-btn" class="language-btn active" onclick="changeLanguage('en')">English</button>
+        <button id="es-btn" class="language-btn" onclick="changeLanguage('es')">Español</button>
+    </div>
+    
+    <header>
+        <h1>BishopTest</h1>
+        <p id="header-description">Privacy Policy</p>
+    </header>
+    
+    <div class="container">
+        <!-- English Content -->
+        <div id="en-content" class="content-section active">
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 16V12M12 8H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Introduction
+                </h2>
+                <p>Thank you for using BishopTest. This Privacy Policy describes how your personal information is collected, used, and shared when you use our application.</p>
+                <p>BishopTest is a medical application designed to assist healthcare professionals in performing Bishop Score evaluations for obstetric assessments. We understand the sensitive nature of medical data and are committed to protecting your privacy.</p>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 10H3M21 6H3M21 14H3M21 18H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Information We Collect
+                </h2>
+                <p>BishopTest collects and processes the following information:</p>
+                <ul>
+                    <li><strong>Patient Information:</strong> Names, ages, and previous delivery history that you enter into the application.</li>
+                    <li><strong>Medical Data:</strong> Bishop Score parameters and evaluation results.</li>
+                    <li><strong>User Preferences:</strong> Settings such as display preferences and professional information that you choose to provide.</li>
+                </ul>
+                <p>All of this information is stored <strong>locally on your device only</strong> and is never transmitted to external servers or third parties.</p>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M19.0711 14.9289C18.3807 15.6193 18.4547 16.7329 19.2071 17.2929C19.6459 17.6343 19.9 18.138 19.9 18.668V19C19.9 19.5523 19.4523 20 18.9 20H5.1C4.54772 20 4.1 19.5523 4.1 19V18.668C4.1 18.1381 4.35416 17.6343 4.79289 17.2929C5.54537 16.7329 5.61932 15.6193 4.92895 14.9289C3.49998 13.5 3.49998 11.5 4.92895 10.0711C5.61932 9.38071 5.54537 8.26714 4.79289 7.70711C4.35417 7.36573 4.1 6.86197 4.1 6.33201V6.33201C4.1 5.7797 4.54772 5.33197 5.1 5.33197L18.9 5.33197C19.4523 5.33197 19.9 5.7797 19.9 6.33201V6.33201C19.9 6.86197 19.6458 7.36573 19.2071 7.70711C18.4547 8.26714 18.3807 9.38071 19.0711 10.0711C20.5 11.5 20.5 13.5 19.0711 14.9289Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    How We Use Your Information
+                </h2>
+                <p>The information collected through BishopTest is used exclusively for:</p>
+                <ul>
+                    <li>Providing the core functionality of the application (Bishop Score calculations and evaluations)</li>
+                    <li>Maintaining a local history of evaluations for your reference</li>
+                    <li>Improving the user experience based on your preferences</li>
+                </ul>
+                <p>Your data is <strong>not used for marketing, advertising, or any other commercial purposes</strong>.</p>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 10V17M12 7H12.01M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Data Sharing and Disclosure
+                </h2>
+                <p>BishopTest does not share, sell, rent, or trade your personal information with third parties. Your data remains on your device and is not transmitted to our servers or to any third parties for any purpose.</p>
+                <p>We do not have access to the data you enter into the application, and we do not collect any usage statistics or analytics.</p>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 11L12 14L15 11M5 5H19C20.1046 5 21 5.89543 21 7V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V7C3 5.89543 3.89543 5 5 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Data Security
+                </h2>
+                <p>We are committed to ensuring the security of your information. Since all data is stored locally on your device, the security of this information is subject to the security measures you have implemented on your device (such as device passcodes, Touch ID, or Face ID).</p>
+                <p>We recommend that you:</p>
+                <ul>
+                    <li>Keep your device's operating system and the BishopTest app updated to the latest version</li>
+                    <li>Use strong device passcodes or biometric protection</li>
+                    <li>Be cautious about allowing others to access your device</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 15L3 9M3 9L9 3M3 9H15C18.3137 9 21 11.6863 21 15C21 18.3137 18.3137 21 15 21H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Your Rights
+                </h2>
+                <p>You have full control over your data within BishopTest. You can:</p>
+                <ul>
+                    <li>Access all patient data stored in the app</li>
+                    <li>Delete individual records or all data from the app</li>
+                    <li>Export or share evaluation results as needed for medical purposes</li>
+                </ul>
+                <p>Since we do not collect or store your data on our servers, there is no need to request access, correction, or deletion of data from us.</p>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Changes to This Policy
+                </h2>
+                <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any changes by posting the new Privacy Policy within the app and updating the "Last Updated" date.</p>
+                <p>We encourage you to review this Privacy Policy periodically for any changes.</p>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 8L10.8906 13.2604C11.5624 13.7083 12.4376 13.7083 13.1094 13.2604L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Contact Us
+                </h2>
+                <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:</p>
+                <p><strong>Email:</strong> <a href="christian.arzaluz@gmail.com">christian.arzaluz@gmail.com</a></p>
+            </div>
+            
+            <div class="card">
+                <p><strong>Last Updated:</strong> April 21, 2025</p>
+                <p>This Privacy Policy is effective as of April 21, 2025.</p>
+            </div>
+        </div>
+        
+        <!-- Spanish Content -->
+        <div id="es-content" class="content-section">
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 16V12M12 8H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Introducción
+                </h2>
+                <p>Gracias por utilizar BishopTest. Esta Política de Privacidad describe cómo se recopila, utiliza y comparte su información personal cuando utiliza nuestra aplicación.</p>
+                <p>BishopTest es una aplicación médica diseñada para ayudar a los profesionales de la salud a realizar evaluaciones del Test de Bishop para valoraciones obstétricas. Entendemos la naturaleza sensible de los datos médicos y estamos comprometidos a proteger su privacidad.</p>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 10H3M21 6H3M21 14H3M21 18H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Información que Recopilamos
+                </h2>
+                <p>BishopTest recopila y procesa la siguiente información:</p>
+                <ul>
+                    <li><strong>Información del Paciente:</strong> Nombres, edades e historial de partos previos que usted ingresa en la aplicación.</li>
+                    <li><strong>Datos Médicos:</strong> Parámetros del Test de Bishop y resultados de la evaluación.</li>
+                    <li><strong>Preferencias del Usuario:</strong> Configuraciones como preferencias de visualización e información profesional que usted elige proporcionar.</li>
+                </ul>
+                <p>Toda esta información se almacena <strong>únicamente de forma local en su dispositivo</strong> y nunca se transmite a servidores externos ni a terceros.</p>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M19.0711 14.9289C18.3807 15.6193 18.4547 16.7329 19.2071 17.2929C19.6459 17.6343 19.9 18.138 19.9 18.668V19C19.9 19.5523 19.4523 20 18.9 20H5.1C4.54772 20 4.1 19.5523 4.1 19V18.668C4.1 18.1381 4.35416 17.6343 4.79289 17.2929C5.54537 16.7329 5.61932 15.6193 4.92895 14.9289C3.49998 13.5 3.49998 11.5 4.92895 10.0711C5.61932 9.38071 5.54537 8.26714 4.79289 7.70711C4.35417 7.36573 4.1 6.86197 4.1 6.33201V6.33201C4.1 5.7797 4.54772 5.33197 5.1 5.33197L18.9 5.33197C19.4523 5.33197 19.9 5.7797 19.9 6.33201V6.33201C19.9 6.86197 19.6458 7.36573 19.2071 7.70711C18.4547 8.26714 18.3807 9.38071 19.0711 10.0711C20.5 11.5 20.5 13.5 19.0711 14.9289Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    Cómo Utilizamos su Información
+                </h2>
+                <p>La información recopilada a través de BishopTest se utiliza exclusivamente para:</p>
+                <ul>
+                    <li>Proporcionar la funcionalidad principal de la aplicación (cálculos y evaluaciones del Test de Bishop)</li>
+                    <li>Mantener un historial local de evaluaciones para su referencia</li>
+                    <li>Mejorar la experiencia del usuario basada en sus preferencias</li>
+                </ul>
+                <p>Sus datos <strong>no se utilizan para marketing, publicidad ni ningún otro fin comercial</strong>.</p>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 10V17M12 7H12.01M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Compartición y Divulgación de Datos
+                </h2>
+                <p>BishopTest no comparte, vende, alquila ni intercambia su información personal con terceros. Sus datos permanecen en su dispositivo y no se transmiten a nuestros servidores ni a terceros para ningún propósito.</p>
+                <p>No tenemos acceso a los datos que usted ingresa en la aplicación, y no recopilamos ninguna estadística de uso ni análisis.</p>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 11L12 14L15 11M5 5H19C20.1046 5 21 5.89543 21 7V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V7C3 5.89543 3.89543 5 5 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Seguridad de Datos
+                </h2>
+                <p>Estamos comprometidos a garantizar la seguridad de su información. Dado que todos los datos se almacenan localmente en su dispositivo, la seguridad de esta información está sujeta a las medidas de seguridad que usted haya implementado en su dispositivo (como códigos de acceso, Touch ID o Face ID).</p>
+                <p>Recomendamos que:</p>
+                <ul>
+                    <li>Mantenga el sistema operativo de su dispositivo y la aplicación BishopTest actualizados a la última versión</li>
+                    <li>Utilice códigos de acceso seguros o protección biométrica</li>
+                    <li>Sea cauteloso al permitir que otros accedan a su dispositivo</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 15L3 9M3 9L9 3M3 9H15C18.3137 9 21 11.6863 21 15C21 18.3137 18.3137 21 15 21H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Sus Derechos
+                </h2>
+                <p>Usted tiene control total sobre sus datos dentro de BishopTest. Puede:</p>
+                <ul>
+                    <li>Acceder a todos los datos de pacientes almacenados en la aplicación</li>
+                    <li>Eliminar registros individuales o todos los datos de la aplicación</li>
+                    <li>Exportar o compartir resultados de evaluación según sea necesario para fines médicos</li>
+                </ul>
+                <p>Dado que no recopilamos ni almacenamos sus datos en nuestros servidores, no hay necesidad de solicitar acceso, corrección o eliminación de datos de nuestra parte.</p>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Cambios en esta Política
+                </h2>
+                <p>Podemos actualizar esta Política de Privacidad periódicamente para reflejar cambios en nuestras prácticas o por otras razones operativas, legales o reglamentarias. Le notificaremos cualquier cambio publicando la nueva Política de Privacidad dentro de la aplicación y actualizando la fecha de "Última Actualización".</p>
+                <p>Le recomendamos que revise esta Política de Privacidad periódicamente para conocer cualquier cambio.</p>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 8L10.8906 13.2604C11.5624 13.7083 12.4376 13.7083 13.1094 13.2604L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Contáctenos
+                </h2>
+                <p>Si tiene alguna pregunta o inquietud sobre esta Política de Privacidad o nuestras prácticas de datos, por favor contáctenos en:</p>
+                <p><strong>Correo electrónico:</strong> <a href="mailto:christian.arzaluz@gmail.com">christian.arzaluz@gmail.com</a></p>
+            </div>
+            
+            <div class="card">
+                <p><strong>Última Actualización:</strong> 21 de abril de 2025</p>
+                <p>Esta Política de Privacidad es efectiva a partir del 21 de abril de 2025.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 BishopTest App. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        function changeLanguage(lang) {
+            // Update header
+            const headerDescription = document.getElementById('header-description');
+            headerDescription.innerText = lang === 'en' ? 'Privacy Policy' : 'Política de Privacidad';
+            
+            // Update content sections
+            const enContent = document.getElementById('en-content');
+            const esContent = document.getElementById('es-content');
+            
+            if (lang === 'en') {
+                enContent.classList.add('active');
+                esContent.classList.remove('active');
+            } else {
+                enContent.classList.remove('active');
+                esContent.classList.add('active');
+            }
+            
+            // Update buttons
+            const enBtn = document.getElementById('en-btn');
+            const esBtn = document.getElementById('es-btn');
+            
+            if (lang === 'en') {
+                enBtn.classList.add('active');
+                esBtn.classList.remove('active');
+            } else {
+                enBtn.classList.remove('active');
+                esBtn.classList.add('active');
+            }
+            
+            // Update document title
+            document.title = lang === 'en' ? 'BishopTest - Privacy Policy' : 'BishopTest - Política de Privacidad';
+        }
+        
+        // Check browser language on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith('es')) {
+                changeLanguage('es');
+            }
+        });
+    </script>
